@@ -28,23 +28,36 @@ class App extends Component {
   }
 
   renderHeader = () => (
-    <Block flex={0.333} column style={{paddingHorizontal: 15, backgroundColor: theme.colors.primary}}>
-      <Block flex={false} row center>
-        <Block center style={{paddingVertical: 15}}>
+    <Block flex={0.45} column style={{paddingHorizontal: 15}}>
+      <Block flex={false} row style={{paddingVertical: 15}}>
+        <Block center>
           <Text h3 bold white>Blood request</Text>
         </Block>
         <Image style={styles.avatar} source={require('./assets/avatar.png')} />
       </Block>
-      <Block card shadow color="white">
-        <Text>chart</Text>
+      {/*  */}
+      <Block card shadow row color="white" style={styles.headerChart}>
+          <Block style={{paddingHorizontal: 30}}>
+            <Text>number</Text>
+          </Block>
+          <Block>
+            <Text>chart</Text>
+          </Block>
       </Block>
     </Block>
   )
 
 
   renderRequest = () => (
-    <Block column flex={0.8} color="gray">
-      <Text>Requests</Text>
+    <Block column flex={0.8} color="gray2" style={styles.requests}>
+      <Block row flex={false} style={{paddingHorizontal: 25}}>
+        <Block>
+          <Text light h4>Requests Updates</Text>
+        </Block>
+        <Block>
+          <Text bold right h4>View All</Text>
+        </Block>
+      </Block>
     </Block>
   )
 
@@ -69,15 +82,9 @@ class App extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    // flex: 1,
-    // backgroundColor: theme.colors.white,
-    // alignItems: 'center',
-    // justifyContent: 'center',
-  },
   save: {
     flex: 1,
-    backgroundColor: theme.colors.gray
+    backgroundColor: theme.colors.primary
   }, 
   headerChart: {
     paddingTop: 30,
