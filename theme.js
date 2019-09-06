@@ -35,7 +35,7 @@ const fonts = {
       fontSize: sizes.h2,
    },
    h3:  {
-      fontSize: sizes.h2,
+      fontSize: sizes.h3,
    },
    body:  {
       fontSize: sizes.body,
