@@ -2044,12 +2044,17 @@ expo-font@~6.0.1:
   dependencies:
     fontfaceobserver "^2.1.0"
 
+expo-haptics@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/expo-haptics/-/expo-haptics-6.0.0.tgz#dd0b8390564b3ba398a3f6d726ce5ad99a892ddc"
+  integrity sha512-Xn+u5Gqp0/aLipKUMhPgZrccTO9uSV5FSM9u6bkMhV/zfjZqQMWpm0NqL24OBBXy5wPmF3g6Hev5YyDUd0Jj9Q==
+
 expo-keep-awake@~6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-6.0.0.tgz#e0d6d1263c6a73488272a62aef98312ab25cab1f"
   integrity sha512-MAtZknf6FtIC0ipkDS2FVa87al8YBsrpsQ2qMf+H/cI6FOd6aahaggN4x75xGnt5UzozgWfjhGNCi1XCr14rJw==
 
-expo-linear-gradient@~6.0.0:
+expo-linear-gradient@^6.0.0, expo-linear-gradient@~6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/expo-linear-gradient/-/expo-linear-gradient-6.0.0.tgz#5fb0fb955dd22ef4ab032e543cb1c249885bf0b5"
   integrity sha512-TGHSK7MsoU1wZXx9uEivMggAR/KT4wTSE0xBfhB8qsziGXoHZdoT79/tZ3HyWtCG7+JVUEFXfUOBxtOlZOu5tg==
@@ -2552,6 +2557,11 @@ has-values@^1.0.0:
   dependencies:
     is-number "^3.0.0"
     kind-of "^4.0.0"
+
+hex-to-rgba@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/hex-to-rgba/-/hex-to-rgba-2.0.1.tgz#4176977882a1cb32b83ce5ab1db6828ab84d5a13"
+  integrity sha512-5XqPJBpsEUMsseJUi2w2Hl7cHFFi3+OO10M2pzAvKB1zL6fc+koGMhmBqoDOCB4GemiRM/zvDMRIhVw6EkB8dQ==
 
 hosted-git-info@^2.1.4:
   version "2.8.4"
@@ -4197,6 +4207,23 @@ react-native-branch@~3.0.1:
   resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-3.0.1.tgz#5b07b61cbd290168cd3c3662e017ebe0f356d2ca"
   integrity sha512-vbcYxPZlpF5f39GAEUF8kuGQqCNeD3E6zEdvtOq8oCGZunHXlWlKgAS6dgBKCvsHvXgHuMtpvs39VgOp8DaKig==
 
+react-native-easy-content-loader@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/react-native-easy-content-loader/-/react-native-easy-content-loader-0.2.3.tgz#d08a09abd3e7823d8716378c70e3faedc8a42f92"
+  integrity sha512-e9YXWdLlSUYWNL5N2nolhf8heHaD69YL43nzToLiVOzC27WdkqconubtWwezBv3l6U2IM6dPBhgVuE4W8Yyi4g==
+  dependencies:
+    hex-to-rgba "^2.0.1"
+    prop-types "^15.6.2"
+    react "^16.7.0"
+
+react-native-gradient-buttons@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-gradient-buttons/-/react-native-gradient-buttons-2.0.1.tgz#d45347d5dffb673defdd27ef12e295758dc2a4e5"
+  integrity sha512-AIl/sTda8ulheoJMr5WWsRc1lJe/KDswqkOH+DRvyMa/G3gkhUoqE7dorPx1KBmVPS6+ks32MUZU9dO6YvNLVQ==
+  dependencies:
+    expo-haptics "^6.0.0"
+    expo-linear-gradient "^6.0.0"
+
 react-native-svg-charts@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/react-native-svg-charts/-/react-native-svg-charts-5.3.0.tgz#00ce3a043594e3c5e283f7496a44ab455c834a51"
@@ -4207,6 +4234,11 @@ react-native-svg-charts@^5.3.0:
     d3-scale "^1.0.6"
     d3-shape "^1.0.6"
     prop-types "^15.6.0"
+
+react-native-svg@^9.8.4:
+  version "9.8.4"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-9.8.4.tgz#6fd28198ae991b30cfbea10bb445b55870f0457c"
+  integrity sha512-s0kCURCQyupf9qL3ZPccZ43Hxkvmccf+tZ1/Tq2bAiORLNhVCI0gtI57zqqHsKk5PnTKmnqT8aTWfp5TzYgZWw==
 
 react-native-view-shot@2.6.0:
   version "2.6.0"
@@ -4314,6 +4346,15 @@ react@16.8.3:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.13.3"
+
+react@^16.7.0:
+  version "16.9.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
+  integrity sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
 
 read-pkg-up@^2.0.0:
   version "2.0.0"

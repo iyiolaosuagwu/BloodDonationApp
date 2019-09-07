@@ -2,7 +2,7 @@ const requests = [
   {
     id: 1,
     bloodType: "B+",
-    name: "Ronald Dixon",
+    name: "Olawale Samson",
     age: 24,
     gender: "Male",
     distance: 28,
@@ -12,7 +12,7 @@ const requests = [
   {
     id: 2,
     bloodType: "O-",
-    name: "Kathy Bates",
+    name: "Kate Mary",
     age: 19,
     gender: "Female",
     distance: 10,
@@ -22,7 +22,7 @@ const requests = [
   {
     id: 3,
     bloodType: "A+",
-    name: "Edward Sanders",
+    name: "John Ugo",
     age: 6,
     gender: "Male",
     distance: 15.3,
@@ -32,9 +32,19 @@ const requests = [
   {
     id: 4,
     bloodType: "A+",
-    name: "Kemi Kemi",
+    name: "Kemi Adekunle",
     age: 8,
     gender: "Female",
+    distance: 10.3,
+    time: 20,
+    priority: "urgent",
+  },
+  {
+    id: 5,
+    bloodType: "O-",
+    name: "Daniel sam",
+    age: 8,
+    gender: "male",
     distance: 10.3,
     time: 20,
     priority: "urgent",
